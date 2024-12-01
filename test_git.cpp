@@ -20,6 +20,15 @@ int findMax(vector<int>& a) {
 }
 
 
+int sort(vector<int>& a) {
+    for(int i = 0; i < a.size() - 1; i++) {
+        for(int j = i + 1; j < a.size(); j++) {
+            if(a[i] > a[j])
+                swap(a[i], a[j]);
+        }
+    }
+}
+
 int main() {
     Student st = init();
 
