@@ -1,3 +1,4 @@
+#include "file.h"
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -18,8 +19,11 @@ int findMax(vector<int>& a) {
     return max;
 }
 
+
 int main() {
-    
-    cout << "Hello World\n";
+    Student st = init();
+
+    cout << st.age << endl;
+    cout << st.name << endl;
     return 0;
 }
